@@ -1,0 +1,244 @@
+/* body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('camill.JPEG'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+  }
+
+  .content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+    color: greenyellow;
+  }
+  .ct {
+    text-align: center;
+  }
+
+  .tiny5 {
+    font-family: "Tiny5", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.head {
+    color: greenyellow;
+    font-size: 48px;
+}
+
+.camp {
+    width: 322px;
+    height: 300px;
+}
+
+.camp-d {
+    display: flex;
+    justify-content: center;
+}
+.desc {
+    color: greenyellow;
+    font-size: 24px;
+}
+.desc-dd {
+    display: flex;
+    justify-content: center;
+}
+.desc-d {
+    width: 500px
+}
+@keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  #copy-feedback {
+    animation: pulse 0.5s;
+  }
+  .copyable-text {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+.htb {
+    font-size: 48px;
+}
+
+.htb-sub {
+    font-size: 30px;
+}
+
+.htb-sec {
+    width: 400px;
+    padding: 10px;
+}
+.t-text {
+    font-size: 25px;
+}
+.htb-div {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    flex-wrap: wrap;
+}  */
+
+
+/* TEST */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('camill.JPEG'); /* Replace 'background.jpg' with your image file */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.center-social p {
+  font-size: 20px;
+}
+.center-social {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the alpha value (0.5) to change the transparency */
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  color: greenyellow;
+}
+.ct {
+  text-align: center;
+}
+
+.tiny5 {
+  font-family: "Tiny5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.head {
+  color: greenyellow;
+  font-size: 48px;
+}
+
+.camp {
+  width: 322px;
+  height: 300px;
+}
+
+.camp-d {
+  display: flex;
+  justify-content: center;
+}
+.desc {
+  color: greenyellow;
+  font-size: 24px;
+}
+.desc-dd {
+  display: flex;
+  justify-content: center;
+}
+.desc-d {
+  width: 500px
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+#copy-feedback {
+  animation: pulse 0.5s;
+}
+.copyable-text {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.htb {
+  font-size: 48px;
+}
+
+.htb-sub {
+  font-size: 30px;
+}
+
+.htb-sec {
+  width: 400px;
+  padding: 10px;
+}
+.t-text {
+  font-size: 25px;
+}
+.htb-div {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.emoji-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.emoji {
+  position: absolute;
+  font-size: 2rem;
+  animation: fall linear infinite;
+  will-change: transform;
+}
+
+@keyframes fall {
+  0% {
+      transform: translateY(-100%);
+  }
+  100% {
+      transform: translateY(100vh);
+  }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cam - $CAM on Solana</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="content">
+        <div class="camp-d">
+            <img class="camp" src="camill.PNG" alt="Cam coin" />
+        </div>
+        <div class="ca ct">
+            <p class="copyable-text" onclick="copyToClipboard()">
+                CA_CA_CA_CA
+            </p>
+            <div id="copy-feedback"></div>
+
+        </div>
+        <div class="desc-dd">
+            <div class="desc-d">
+                <p class="desc tiny5 ct">
+                    Cam the most memey Camel ever found on the solana blockchain. He can spit, he can run and he rules
+                    the blockchain. Quite bullish?
+                </p>
+            </div>
+        </div>
+
+        <div>
+            <h1 class="htb">HOW TO BUY</h1>
+            <div  class="htb-div">
+                <div class="htb-sec">
+                    <h1>CREATE WALLET</h1>
+                    <p>
+                        Get Phantom or your preferred wallet for free from Google Play or the app store. For desktop
+                        users, visit Phantom to get the Google Chrome extension.
+                    </p>
+                </div>
+
+                <div class="htb-sec">
+                    <h1>GET SOLANA</h1>
+                    <p>
+                        Keep SOL in your wallet in order to convert to $CAM. You can purchase directly on Phantom, transfer funds from another wallet, or purchase on another exchange and send the funds to your wallet if you don't have any SOL.
+                    </p>
+                </div>
+
+                <div class="htb-sec">
+                    <h1>OPEN JUPITER</h1>
+                    <p>Connect to Jupiter. Navigate to Jupiter using the Phantom app's browser or Chrome. Link your pocketbook. In Jupiter, paste the $CAM token address, choose $CAM, and click "Confirm." Please sign when Phantom asks for a wallet signature.
+
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div>
+            <h1 class="htb">BUY ON PUMP FUN</h1>
+            <div  class="htb-div">
+                <div class="htb-sec">
+                    <h1>                        GO TO <a href="https://pump.fun">PUMP.FUN</a>
+                    </h1>
+                    <p class="t-text">
+                    </p>
+                </div>
+
+                <div class="htb-sec">
+                    <h1>SEARCH UP "CAMILL"</h1>
+    
+                </div>
+
+                <div class="htb-sec">
+                    <h1>CHECK CA AND APE</h1>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        function copyToClipboard() {
+  var textToCopy = document.querySelector(".copyable-text").innerText;
+  navigator.clipboard.writeText(textToCopy)
+    .then(() => {
+      var feedback = document.getElementById("copy-feedback");
+      feedback.textContent = "Text copied to clipboard!";
+      feedback.style.display = "block";
+      setTimeout(() => {
+        feedback.style.display = "none";
+      }, 1000);
+    })
+    .catch(err => {
+      console.error('Failed to copy: ', err);
+    });
+}
+    </script>
+</body>
+
+</html>
