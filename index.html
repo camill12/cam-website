@@ -35,17 +35,20 @@
         <div>
             <div class="center-social">
                 <p>
-                    <a >
+                    <a href=">https://t.me/camillcoin">
                         TELEGRAM
                     </a>
                 </p>
 
                 <p>
-                    <a>
+                    <a href="https://x.com/camillcoin">
                         TWITTER
                     </a>
                 </p>
             </div>
+        </div>
+        <div class="center-btn">
+            <button class="btn" id="audioButton" onclick="toggleAudio()">Play Camill Song</button>
         </div>
         <div class="desc-dd">
             <div class="desc-d">
@@ -143,6 +146,17 @@
     emojiContainer.classList.add('emoji-container');
     document.body.appendChild(emojiContainer);
 
+    function toggleAudio() {
+            var audio = document.getElementById('audioPlayer');
+            var button = document.getElementById('audioButton');
+            if (audio.paused) {
+                audio.play();
+                button.textContent = 'Pause Audio';
+            } else {
+                audio.pause();
+                button.textContent = 'Play Audio';
+            }
+        }
     const intervalId = setInterval(() => {
         const emoji = document.createElement('div');
         emoji.classList.add('emoji');
